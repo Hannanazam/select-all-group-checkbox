@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Checkbox Select All &amp; Select Group</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-6">
+      <form>
+        <div class="form-check mb-3">
+          <input class="form-check-input checkbox" id="cbx-select-all" type="checkbox" value="Group A 1"/>
+          <label class="form-check-label" for="cbx-select-all">Select ALL</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input checkbox cbx-select-group" id="cbx-select-group-a" type="checkbox" value="a"/>
+          <label class="form-check-label" for="cbx-select-group-a">Select Group A</label>
+        </div>
+        <fieldset class="form-group mb-3">
+          <div class="form-check">
+            <input class="form-check-input checkbox cbx-group cbx-group-a" id="cbx-group-a-1" type="checkbox" value="Group A 1" data-group="a" data-id="A1"/>
+            <label class="form-check-label" for="cbx-group-a-1">Group A - 1</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input checkbox cbx-group cbx-group-a" id="cbx-group-a-2" type="checkbox" value="Group A 2" data-group="a" data-id="A2"/>
+            <label class="form-check-label" for="cbx-group-a-2">Group A - 2</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input checkbox cbx-group cbx-group-a" id="cbx-group-a-3" type="checkbox" value="Group A 3" data-group="a" data-id="A3"/>
+            <label class="form-check-label" for="cbx-group-a-3">Group A - 3</label>
+          </div>
+        </fieldset>
+        <div class="form-check">
+          <input class="form-check-input checkbox cbx-select-group" id="cbx-select-group-b" type="checkbox" value="b"/>
+          <label class="form-check-label" for="cbx-select-group-b">Select Group B</label>
+        </div>
+        <fieldset class="form-group">
+          <div class="form-check">
+            <input class="form-check-input checkbox cbx-group cbx-group-b" id="cbx-group-b-1" type="checkbox" value="Group B 1" data-group="b" data-id="B1"/>
+            <label class="form-check-label" for="cbx-group-b-1">Group B - 1</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input checkbox cbx-group cbx-group-b" id="cbx-group-b-2" type="checkbox" value="Group B 2" data-group="b" data-id="B2"/>
+            <label class="form-check-label" for="cbx-group-b-2">Group B - 2</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input checkbox cbx-group cbx-group-b" id="cbx-group-b-3" type="checkbox" value="Group B 3" data-group="b" data-id="B3"/>
+            <label class="form-check-label" for="cbx-group-b-3">Group B - 3</label>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div class="col-6">
+      <div class="p-3 bg-dark w-100 h-100 text-white"> 
+        <div class="font-weight-bold text-muted">Selected:</div>
+        <div class="output">nothing selected</div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
